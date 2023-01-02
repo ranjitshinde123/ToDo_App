@@ -8,7 +8,6 @@ from rest_framework import generics
 from .serializer import ToDoserializer
 from .models import ToDo
 
-# Create your views here.
 
            ### Using generics class_based view ###
 
@@ -23,8 +22,8 @@ class ToDoDetail(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = ToDoserializer
 
 
-
          ### using class-based views ###
+
 # class ToDoList(APIView):
 #     def get(self, request, format=None):
 #         snippets = ToDo.objects.all()
@@ -67,6 +66,7 @@ class ToDoDetail(generics.RetrieveUpdateDestroyAPIView):
 
             #### Using mixin ###
 
+
 # class ToDoList(mixins.ListModelMixin,generics.GenericAPIView):
 #     queryset = ToDo.objects.all()
 #     serializer_class =ToDoserializer
@@ -80,8 +80,10 @@ class ToDoDetail(generics.RetrieveUpdateDestroyAPIView):
 #     def get(self, request, *args, **kwargs):
 #         return self.retrieve(request, *args, **kwargs)
 #
+
 #     def put(self, request, *args, **kwargs):
 #         return self.update(request, *args, **kwargs)
 #
 #     def delete(self, request, *args, **kwargs):
 #         return self.destroy(request, *args, **kwargs)
+

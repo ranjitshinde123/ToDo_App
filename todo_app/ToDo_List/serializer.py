@@ -4,3 +4,7 @@ class ToDoserializer(serializers.ModelSerializer):
     class Meta:
         model=ToDo
         fields=['id','title','discription','complete']
+
+'''
+
+'''

@@ -6,3 +6,9 @@ class ToDo(models.Model):
     discription=models.TextField(max_length=50)
     complete=models.BooleanField(max_length=20)
 
+
+
+
+
+
+

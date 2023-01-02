@@ -5,3 +5,6 @@ urlpatterns=[
     path('create/',ToDoCreate.as_view()),
     path('details/<int:pk>',ToDoDetail.as_view())
 ]
+
+
+
